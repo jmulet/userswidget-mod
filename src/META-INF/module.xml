@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+    <module jar="org-iesapp-modules-userswidget.jar" class="org.iesapp.modules.userswidget.UsersWidgetModule" autoStart="yes" multipleInstance="no" closable="no">
+    <display location="statusbar" parentId=""/>                       
+    <bundle>
+            <locale key="title" value="ca"><![CDATA[Usuaris en línia]]></locale>
+            <locale key="title" value="es"><![CDATA[Usuarios en linea]]></locale>
+            <locale key="title" value="default"><![CDATA[Online users]]></locale>
+            <locale key="description" value="default"><![CDATA[Instant SMS among system users]]></locale>
+     </bundle>
+    <initialization>
+        <parameter key="userswidget.refreshUsersSeconds" type="Integer">
+            <value><![CDATA[60]]></value>
+            <description><![CDATA[ ]]></description>
+        </parameter>
+        <parameter key="userswidget.enableUsersNotes" type="Boolean">   
+            <value><![CDATA[yes]]></value>
+            <description><![CDATA[ ]]></description>
+        </parameter>     
+    </initialization>
+    <metaINF author="Josep Mulet (c) 2012" version="1.2" dependencies=""/>
+    </module>    
+</root>
